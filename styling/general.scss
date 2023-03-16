@@ -1,0 +1,359 @@
+//Import of partials
+@import './_colours_and_fonts';
+
+//General styling of the body element
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right,  $spaceCadet,$cerulaean);
+}
+
+//General styling of the Navbar
+.navBar{
+    background-color: $zomp;
+    background-image: url('./images/silas-baisch-ceITO2rlDgc-unsplash.jpg');
+    border: 5px solid $spaceCadet;
+    outline: 1px solid $flax;
+    border-radius: 25px;
+    display: flex;
+    min-width: 80%;
+    height: auto;
+    margin: 1vh;
+    justify-content: space-around;
+}
+
+//General styling of the container of the image
+.imgContainer{
+    background-image: url('./images/Self.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 10vh;
+    width: 8vh;
+    margin: 2vh 2vh;
+    padding:1vh;
+    border: 3px solid $spaceCadet;
+    border-radius: 15px;
+}
+
+//General styling for photo and name
+.photo{
+        margin: 5vh auto 10vh auto;
+        display: inline-block;
+        height: 5vh;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 42px;
+        color: $flax;
+	    text-shadow:    -1px 1px 2px $spaceCadet,
+	                    1px 1px 2px $spaceCadet,
+				        1px -1px 0 $spaceCadet,
+				        -1px -1px 0 $spaceCadet;
+}
+
+.ulNavLinks{
+    display: inline-block;   
+}
+
+.liNavLinks{
+    display: inline-block;
+    background-color: $spaceCadet;
+    border: 2px solid $flax;
+    border-radius: 15px;
+    list-style: none;
+    width:20vh;
+    margin: 3vh 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.liNavLinks > a{
+    color: $flax;
+    display: block;
+    
+
+}
+
+//General styling for Biography and Work Experience sections (flex) 
+.flexDiv{
+    background-color: $eladon;
+    border: 5px solid $spaceCadet;
+    outline: 1px solid $flax;
+    border-radius: 25px;
+    color: $spaceCadet;
+    margin: 2vh auto;
+    padding: 2vh 4vh;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+//General styling for Biography section
+#biography{
+    background-image: url('./images/anne-nygard-h7-V2KkCECI-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $flax;
+	text-shadow:    -1px 1px 2px $spaceCadet,
+	    		    1px 1px 2px $spaceCadet,
+				    1px -1px 0 $spaceCadet,
+				    -1px -1px 0 $spaceCadet;
+
+}
+
+//General styling for the Work Experience Section
+#workExperience{
+    background-image: url('./images/unseen-studio-s9CC2SKySJM-unsplash.jpg');   
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $flax;
+	text-shadow:    -1px 1px 2px $spaceCadet,
+	    		    1px 1px 2px $spaceCadet,
+				    1px -1px 0 $spaceCadet,
+				    -1px -1px 0 $spaceCadet;
+}
+
+//General styling for Competence / Skills, Education and Contact sections (flex) 
+.gridDiv{
+    background-color: $eladon;
+    border: 5px solid $spaceCadet;
+    outline: 1px solid $flax;
+    border-radius: 25px;
+    padding: 2vh 4vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+//General styling, including grid-layout for the Competence / Skills, Education and Contact sections.
+.cseContainer{
+    display: grid;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+                            'a a b b'
+                            'a a b b'
+                            'a a c c';
+    gap:4vh;
+}
+
+//General styling for Competence / Skills section (css grid) 
+#competenciesAndSkills {
+    grid-area: a;
+    background-image: url('.//images/ian-dooley-DJ7bWa-Gwks-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $flax;
+    text-shadow:    -1px 1px 2px $spaceCadet,
+                    1px 1px 2px $spaceCadet,
+                    1px -1px 0 $spaceCadet,
+                    -1px -1px 0 $spaceCadet;    
+
+}
+
+//General styling for Education section (css grid) 
+    #education {
+        grid-area: b;
+        background-image: url('./images/giammarco-boscaro-zeH-ljawHtg-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: $flax;
+	    text-shadow:    -1px 1px 2px $spaceCadet,
+	    		        1px 1px 2px $spaceCadet,
+				        1px -1px 0 $spaceCadet,
+				        -1px -1px 0 $spaceCadet;
+}
+
+//General styling for Contact section (css grid) 
+#contact{
+    grid-area: c;
+    background-image: url('./images/firmbee-com-SpVHcbuKi6E-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $flax;
+	text-shadow:    -1px 1px 2px $spaceCadet,
+	    		    1px 1px 2px $spaceCadet,
+				    1px -1px 0 $spaceCadet,
+				    -1px -1px 0 $spaceCadet;}
+
+//General styling for the container of the icons in the Competence/Skills section
+.codingIcons{
+    width:5vh;
+    width: 5vh;
+    list-style: none;
+    display: flex;
+    min-width: 80%;
+}    
+
+//General styling for  the icons in the Competence/Skills section
+.icons{
+    display: inline-block;
+    border: 2px solid $spaceCadet;
+    background-color: $spaceCadetLight;
+    width:5vh;
+    height: 5vh;
+    margin: 2vh 1vh;
+}
+
+//General styling for the unordered list-items in both the flex and css-grid sections
+.flexDiv,.gridDiv, ul li{
+    list-style: none;
+    line-height: 24px;
+
+}
+
+//Styling to be applied to make page responsive if device viewport width is smaller than 1500px;
+    @media screen and (max-width:1500px) {
+
+//General styling for page applying some padding
+*{
+    padding: 10px;
+}
+
+//General styling for page applying some padding
+body{
+    box-sizing: border-box;
+}
+
+//Styling for Navbar and Navbar elements
+.navBar{
+    display: block;
+    background-color: $zomp;
+    width: auto;
+    margin: 0 auto;
+}
+
+//Styling for the container of the photo and name
+.imgContainer{
+    background-image: url('./images/Self.jpg');
+    border: 3px solid $spaceCadet;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 2vh auto 2vh auto;
+    width: 18vh;
+    height: 24vh;
+}
+
+//Styling for the photo
+.photo{
+    display: block;
+    margin: 1vh auto 1vh auto;
+    width: auto;
+    height: 10vh;
+    font-weight: bolder;
+    font-size: 6vh;
+    color: $flax;
+	text-shadow:    -1px 1px 2px $spaceCadet,
+				    1px 1px 2px $spaceCadet,
+				    1px -1px 0 $spaceCadet,
+				    -1px -1px 0 $spaceCadet;
+}
+        
+//Styling for Nav Links
+.ulNavLinks{
+    display: flex;
+    width: auto;
+    min-width:18vh;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.liNavLinks{
+    display: flexbox;
+    width: 100%;
+    padding: 1vh auto 1vh auto;
+}
+
+//General styling for Biography and Work Experience sections (flex) 
+.flexDiv{
+    background-color: $eladon;
+    border: 5px solid $spaceCadet;
+    border-radius: 25px;
+    color: $spaceCadet;
+    margin: 2vh auto;
+    padding: 2vh 4vh;
+    width:70%;
+    min-width: 60%;
+    max-width: 80%;
+}
+
+//General styling, including grid-layout for the Competence / Skills, Education and Contact sections.        
+.cseContainer{
+    border-radius: 25px;
+    justify-content: center;
+    display: grid;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    //new grid-template-area for element positioning on smaller devices
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                            'd d d d'
+                            'd d d d'
+                            'e e e e'
+                            'f f f f';
+    gap:4vh;
+}    
+
+//General styling for elements positioned using css grid
+.gridDiv{
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        background-color: $eladon;
+        width: auto;
+        max-width: 80%;
+}
+
+//Styling and assigning of elements on new grid-template-areas
+//Competencies and Skills section
+#competenciesAndSkills {
+    grid-area:d;
+}
+
+//General styling for the container of the icons in the Competence/Skills section
+.codingIcons{
+    width: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    justify-content: center;
+}    
+
+//General styling for the icons
+.icons{
+   display: block;
+   margin: auto;
+   border: 2px solid $spaceCadet;
+   background-color: $spaceCadetLight;
+   width:5vh;
+   height: 5vh;
+}
+
+//Education section
+#education {
+    grid-area:e;
+}
+
+//Contact Section
+#contact{
+        grid-area:f;
+        height: auto;
+        max-height: 65vh;}
+
+}
+
+
+    
+    
+    
